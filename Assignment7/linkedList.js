@@ -3,9 +3,11 @@
 
 function my(list){
     if(list.children==null){
-        console.log(list.name);
+        console.log(list.name, ":",list.value);
+        return list.name
     }else{
         for(let sub of list.children){
+            console.log(list.name, ":",list.value);
             console.log(my(sub));
         }
        
@@ -38,4 +40,4 @@ let node1 = {
     value: null,
 };
 
-console.log(my(node2));
+my(node1);
