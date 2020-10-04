@@ -3,11 +3,22 @@
 
 // this function doubles the given array value
 
+/**
+ * 
+ * @param {*} arr is the given array 
+ * @return{arr} new array whith doubled each elements of the given array
+ */
+
 function doublenum(arr){
     return arr.map(item=>item *2);
 }
 
 // this function doubles the given object value of the age
+/**
+ * 
+ * @param {*} arr is the give array of an object
+ * @return{obj} new array of object which each age of the object is doubled
+ */
 
 function doubleObj(arr){
     return arr.map(item=>item.age *2);

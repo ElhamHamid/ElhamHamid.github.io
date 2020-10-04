@@ -1,16 +1,16 @@
 "use strict";
 /* eslint-disable*/
 
-function my(list){
-    if(list.children==null){
-        console.log(list.name, ":",list.value);
+function my(list) {
+    if (list.children == null) {
+        console.log(list.name, ":", list.value);
         return list.name
-    }else{
-        for(let sub of list.children){
-            console.log(list.name, ":",list.value);
-            console.log(my(sub));
+    } else {
+        console.log(list.name, ":", list.value)
+        for (let sub of list.children) {
+            my(sub);
         }
-       
+
     }
 }
 

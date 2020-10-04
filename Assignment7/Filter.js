@@ -3,6 +3,11 @@
 
 
 // this function filters all even number from the given array value
+/**
+ * 
+ * @param {*} arr is the given array
+ * @return{obj} returns an array of filtered number with the condition
+ */
 
 function filterEven(arr){
     return arr.filter(function(item){
@@ -14,6 +19,12 @@ function filterEven(arr){
 
 
 // this function filters all even number from the given array of object of value the age
+/**
+ * 
+ * @param {*} arr is the given array
+ * @return{obj} returns an array of object of filtered age with the condition
+ */
+
 
 function filterEvenObj(arr){
     return arr.filter(function(item){
@@ -22,16 +33,12 @@ function filterEvenObj(arr){
         }
     })
 }
-// this function filters all numbers greter thatn 10 from the given array 
-
-function filterNumGreater(arr){
-    return arr.filter(function(item){
-        if(item >10){
-            return item;
-        }
-    })
-}
-// this function filters all ages greter thatn 10 from the given array of an object
+// this function filters all ages greter than 10 from the given array of an object
+/**
+ * 
+ * @param {*} arr is the given array of object
+ * @returns{obj} returns array of object which are filtered with the condition
+ */
 
 function filterNumGreaterObj(arr){
     return arr.filter(function(item){
@@ -41,7 +48,19 @@ function filterNumGreaterObj(arr){
     })
 }
 
+/**
+ * 
+ * @param {*} arr the give array
+ * @returns{Number} returns the first element of the array which satsfied the conditon 
+ */
 
+function findEven(arr){
+    return arr.find(function(item){
+        if(item % 2===0){
+            return item;
+        }
+    });
+}
 
 
 
@@ -54,3 +73,5 @@ console.log(filterEven(numArray));
 console.log(filterEvenObj(peopleArray));
 console.log(filterNumGreater(numArray));
 console.log(filterNumGreaterObj(peopleArray));
+console.log(findEven(numArray));
+

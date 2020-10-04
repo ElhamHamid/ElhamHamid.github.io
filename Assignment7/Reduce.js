@@ -34,6 +34,16 @@ function returnMax(arr){
 
 // This function returns the maximum age of a given array of objects
 
+function returnMaxObj(arr){
+    let myMax=0;
+    for(let values of arr){
+        if(values.age>myMax){
+            myMax=values.age;
+        }
+    }
+    return myMax;
+}
+
 
 
 
@@ -42,8 +52,9 @@ const numArray = [5,0, 7, 77, -20, 300, 51, 2]
 const peopleArray = [{name: "Sam", age: 15}, {name: "William", age: 6}, {name: "Lucy", age: 13}, {name:
 "Barney", age: 80}]
 
-console.log(sumNumber(numArray));
-console.log(sumNumberObj(peopleArray));
-console.log(averageNumber(numArray));
-console.log(averageNumberObj(peopleArray));
-console.log(returnMax(numArray));
+// console.log(sumNumber(numArray));
+// console.log(sumNumberObj(peopleArray));
+// console.log(averageNumber(numArray));
+// console.log(averageNumberObj(peopleArray));
+// console.log(returnMax(numArray));
+console.log(returnMaxObj(peopleArray));
