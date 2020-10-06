@@ -19,14 +19,14 @@ sayHi(); // what will it show: "John" or "Pete"? it will return the updated valu
 // Will it have access to the outer variables from its creation place, or the invocation place, or both?
 
 function makeWorker() {
-    let name = "Pete";
+    let user = "Pete";
   
     return function() {
-      console.log(name);
+      console.log(user);
     };
   }
   
-  let name = "John";
+  let user = "John";
   
   // create a function
   let work = makeWorker();
